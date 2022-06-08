@@ -8,8 +8,11 @@ requisicao.onload = function() {
   let personagens = requisicao.response;
   const elemento = document.getElementById('list');
   
+  let titulo = `<h1>Personagens</h1>`;
+  elemento.insertAdjacentHTML('afterbegin', titulo);
+
   personagens.characters.forEach(personagem => {
-    let nome = `<div class="personagem">${personagem.name}</div>`
-    elemento.insertAdjacentHTML('afterbegin', nome);
+    let nome = `<div class="personagem">${personagem.name}</div>`;
+    elemento.insertAdjacentHTML('beforeend', nome);
   });
 }
