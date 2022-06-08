@@ -1,0 +1,10 @@
+.personagem {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 1px solid rgb(61, 157, 37);
+  margin: 10px;
+  padding: 10px;
+  color: #FFF;
+  font-size: 24px;
+  background-color: rgb(61, 157, 37);;
+}

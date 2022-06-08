@@ -9,7 +9,7 @@ requisicao.onload = function() {
   const elemento = document.getElementById('list');
   
   personagens.characters.forEach(personagem => {
-    let nome = `<div>${personagem.name}</div>`
+    let nome = `<div class="personagem">${personagem.name}</div>`
     elemento.insertAdjacentHTML('afterbegin', nome);
   });
 }
